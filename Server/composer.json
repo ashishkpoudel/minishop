@@ -1,0 +1,23 @@
+{
+    "name": "minishop/minishop",
+    "description": "minishop",
+    "type": "project",
+    "authors": [
+        {
+            "name": "ashish k. poudel",
+            "email": "routeasis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Minishop\\": "app/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "symfony/routing": "^4.2",
+        "symfony/http-foundation": "^4.2",
+        "symfony/http-kernel": "^4.2",
+        "phpunit/phpunit": "^8.1"
+    }
+}

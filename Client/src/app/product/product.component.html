@@ -1,0 +1,28 @@
+<div class="container">
+
+  <div *ngIf="success_message">
+      <h3>{{success_message}}</h3>
+  </div>
+  
+  <form [formGroup]="product_form" novalidate>
+  <div class="card">
+    <div>{{ product.name }}</div>
+    <div>{{ product.price_formatted }}</div>
+    <div>{{ product.description }}</div>
+    <div style="padding: 10px 0px;">
+      <label>Quanity: </label>
+      <input type="number" formControlName="quantity">
+    </div>
+    <div style="padding: 10px 0px;">
+      <label>Payment Method: </label>
+      <select formControlName="payment_method">
+        <option value="stripe">Stripe</option>
+        <option value="cash_on_delivery">Cash on delivery</option>
+      </select>
+    </div>
+    <div>
+      <button type="submit" (click)="onProceed()" [disabled]="! product_form.valid">Order</button>
+    </div>
+  </div>
+</form>
+</div>

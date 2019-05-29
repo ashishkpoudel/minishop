@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="card" *ngFor="let product of products">
+    <div>{{ product.name }}</div>
+    <div>{{ product.price_formatted }}</div>
+    <div>{{ product.description }}</div>
+    <div><a [routerLink]="['/products', product.id]">Buy</a></div>
+  </div>
+</div>

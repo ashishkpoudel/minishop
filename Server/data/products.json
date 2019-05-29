@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1, 
+        "name": "Asus Monitor", 
+        "price": 100, 
+        "price_currency": "USD", 
+        "price_formatted": "$100",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consequat lacus sit amet posuere aliquam. Etiam ut risus suscipit, tempor neque nec, molestie tortor. Fusce rutrum velit quis ornare euismod. Nullam sed felis nisi. Integer maximus aliquam lectus. Nam ut dui leo. Nulla sed bibendum massa, id vestibulum augue."
+    },
+
+    {
+        "id": 2, 
+        "name": "Black fire tshirt",  
+        "price": 50, 
+        "price_currency": "USD",
+        "price_formatted": "$50",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In consequat lacus sit amet posuere aliquam. Etiam ut risus suscipit, tempor neque nec, molestie tortor. Fusce rutrum velit quis ornare euismod. Nullam sed felis nisi. Integer maximus aliquam lectus. Nam ut dui leo. Nulla sed bibendum massa, id vestibulum augue."
+    }
+]
