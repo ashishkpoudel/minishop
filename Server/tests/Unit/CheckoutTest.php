@@ -3,6 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
+
 use Minishop\Domain\Products\Product;
 use Minishop\Domain\Payments\Stripe;
 use Minishop\Domain\Payments\CashOnDelivery;
@@ -18,9 +19,17 @@ class CheckoutTest extends TestCase
         $checkout = new Checkout();
         $checkout->addItem($product, 1);
 
-        $checkout->process($stripe);
-
+        $this->assertEquals(true, $checkout->process($stripe));
     }
 
+    public function test_checkout_can_be_done_using_cash_on_delivery()
+    {
+        $product = Product::find(1);
+        $cash_on_delivery = new CashOnDelivery();
 
+        $checkout = new Checkout();
+        $checkout->addItem($product, 1);
+
+        $this->assertEquals(true, $checkout->process($cash_on_delivery));
+    }
 }

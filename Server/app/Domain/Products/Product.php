@@ -8,7 +8,7 @@ class Product
 {
     public static function all()
     {
-        return json_decode(file_get_contents(sprintf("%s/data/products.json", $_SERVER['DOCUMENT_ROOT'])), true);
+        return json_decode(file_get_contents(sprintf("%s/products.json", __DIR__)), true);
     }
 
     public static function find(int $id)
